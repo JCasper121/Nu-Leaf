@@ -1,0 +1,132 @@
+<!-- ----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:       John (Jac) Casper                                  #
+#Date Created:          8/29/20                                 #
+#Version:               0.0.2                                      #
+#Date Last Modified:    9/5/20                            #
+#Modified by:           John Casper                                #
+#Modification log:      
+    -1st week final draft   8/30/20                            #
+    -2nd week FAQ page      9/4/20
+
+ --
+------------------------------------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/favicon.png" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../scripts/darkmode.js"></script>
+    <script src="../scripts/regex_library.js"></script>
+    <script src="../scripts/contact.js"></script>
+    <title>NuLeaf Eco-Construction</title>
+</head>
+<body id="body">
+    <header id="header">
+        <button id="drkmd"">Dark Mode</button>
+        <a href="../index.html">
+            <img style="width:11%;height:11%;" src="../images/tinyhousecolor (2).png" alt="Leaf Logo">
+        </a>
+        <h1 class="brand">NuLeaf Eco-Construction</h1>
+    </header>
+    <nav>
+        <a href="../index.html"><h3>Home</h3></a>
+        <a class="nav" href="../pages/contact.html"><h3>Contact</h3></a> 
+        <a class="nav" href="../pages/services.html"><h3>What we do</h3></a> 
+        <a class="nav" href="../pages/appointment.html"><h3>Set a Meet</h3></a>
+        <a class="nav" href="../pages/FAQ.html"><h3>FAQ</h3></a>
+        <a class="nav" href="../pages/profile.html"><h3>Profile</h3></a>
+        <a class="nav" href="../pages/login.php"><h3>Admins</h3></a>
+
+    </nav>
+    <main class="contact_main">
+        <article class="article">
+            <h1>Contact Us</h1>
+            <h3 id="validationSuccess"> </h3>
+            <form id="contact_form" name="contact_form" method="post" action="contact_confirm.php">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name">
+                <span class="error-message" id="name_error">*</span>
+                <br>
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email">
+                <span class="error-message" id="email_error">*</span>
+                <br>
+                <label for="phone">Phone: </label>
+                <input type="text" name="phone" id="phone">
+                <span class="error-message" id="phone_error"> </span>
+                <br>
+                <br>
+                <h4 class="align-left">Pick the type of construction</h4>
+                <label for="radio_thow">House on Wheels</label>
+                <input type="radio" name="type" value='thw' id="radio_thow">
+                <span class="error-message" id="type_error">*</span>
+                <br>
+                <label for="radio_strawbale">Strawbale</label>
+                <input type="radio" name="type" value="stb" id="radio_strawbale">
+                <br>
+                <label for="radio_other">Other/Unsure</label>
+                <input type="radio" name="type" value='oth' id="radio_other">
+                <br>
+                <br>
+                <label for="message">Message: </label>
+                <span class="error-message" id="message_error">*</span>
+                <br>
+                <textarea name="message" id="message" cols="40" rows="10" placeholder="Write a short message describing your eco-construction plans"> </textarea>
+                <h4 class="align-left">Select contact methods</h4>
+                <label for="email">Email:</label>
+                <input type="checkbox" value="mail" name="contact_email" id="contactEmail">
+                <label for="phone">Phone:</label>
+                <input type="checkbox" value='phone' name="contact_phone" id="contactPhone">
+                <span class="error-message" id="contact_error">*</span>
+                <br>
+                <input type="button" id="contactSubmit" value="Submit">
+                <input type="button" id="contactReset" value="Reset">
+            </form>
+        </article>
+        <article class="article">
+            <h1>Or..... Sign up for our newsletter!</h1>
+            <p>For all the newest eco-construction methods, technologies, and ways to protect the environment!</p>
+            <h3 id="newsletter_validationSuccess"> </h3>
+            <form action="get" method="get">
+                <h2 id="validationSuccess"> </h2>
+                <label for="newsletter_name">Name</label>
+                <input id="newsletter_name" type="text">
+                <span class="error-message" id="newsletter_name_error">*</span>
+                <br>
+                <label for="newsletter_email">Email</label>
+                <input id="newsletter_email" type="text">
+                <span class="error-message" id="newsletter_email_error">*</span>
+                <br>
+                <input type="submit" value="Submit" id="newsletter_submit">
+                <input type="button" value="Reset" id="newsletter_reset">
+            </form>
+        </article>
+    </main>
+    <footer id="footer">
+        <div class="thirds">
+            <h4>Nu-Leaf 2020 &copy</h4>
+            <p>Nu-Leaf Eco-Construction LLC <br>58432 W Main st. <br>Suite 210 <br>Boise, ID 83713</p>
+        </div>
+        <div class="thirds">
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:publicmail@nuleaftinyhouse.com">publicmail@nuleaftinyhouse.com</a></p>
+            <p>Phone: <a href="tel:(555)555-555">(555)555-555</a></p>
+        </div>
+        <div class="thirds">
+            <h4>Follow us on social media!</h4>
+            <a href="https://www.reddit.com/r/TinyHouses/" target="_blank">
+                <img class="socmed" src="../images/reddit.png" alt="Reddit">
+            </a>
+            <a href="https://twitter.com/TinyHouseX" target="_blank">
+                <img class="socmed" src="../images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/tinyhouse/" target="_blank">
+                <img class="socmed" src="../images/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

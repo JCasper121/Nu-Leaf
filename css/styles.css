@@ -1,0 +1,436 @@
+/* 
+Original Author:                           John (Jac) Casper
+Date Created                               9/11/2020
+Version:                                   0.0.1
+Date Last Modified:                        9/11/2020
+Modified by:                               John Casper
+Modification log
+                created                    9/13/2020
+                styled buttons and navbar  9/13/2020
+                added 'Averia' font          9/14/20
+                organized and added comments 9/14/20
+
+
+*/
+
+/* FONT FOR H1 TAGS AND NAV LINKS */
+@font-face {
+    font-family: 'Averia Serif Libre';
+    src: url('../fonts/AveriaSerifLibre-Bold.woff2') format('woff2'),
+        url('../fonts/AveriaSerifLibre-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* *********************************************** */
+/* DARKMODE STYLES*/
+/* *********************************************** */
+.darkmode {
+    background-color: black;
+    color: rgb(200,183,146);
+    /* color: rgb(150, 150, 79); */
+}
+
+#drkmd {
+    float: right;
+    border: 2px;
+    border-color: white;
+}
+/* *********************************************** */
+/* DARKMODE STYLES END*/
+/* *********************************************** */
+
+
+
+
+
+/* *********************************************** */
+/* HEADER STYLES */
+/* *********************************************** */
+header {
+    background-image: linear-gradient(45deg, green 20%, rgb(124, 109, 75));
+    padding-left: 40px;
+    text-align: top;
+}
+
+header.darkmode {
+    background-image: linear-gradient(45deg, green 25%, rgb(10, 8, 0));
+    padding-left: 40px;
+}
+
+.brand {
+    color: rgb(87, 70, 17);
+    font-family: 'Averia Serif Libre';
+    font-size: xx-large;
+}
+
+.darkmode .brand {
+    color: rgb(87, 70, 17);
+    font-family: 'Averia Serif Libre';
+    font-size: xx-large;
+}
+
+h1 {
+    display: inline;
+    margin-left: 50px;
+    font-family: 'Averia Serif Libre';
+}
+/* *********************************************** */
+/* HEADER STYLES END*/
+/* *********************************************** */
+
+
+
+
+
+/* *********************************************** */
+/* NAV BAR STYLES */
+/* *********************************************** */
+nav {
+
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image: url(../images/woodbackground.png);
+    background-repeat: repeat;
+    background-position: middle;
+}
+
+nav a{
+    font-family: 'Averia Serif Libre';
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: rgb(65, 39, 6);
+}
+
+nav a h3{
+    color: rgb(87, 70, 17);
+    display: inline-block;
+}
+
+.darkmode nav a h3{
+    color: rgb(87, 70, 17);
+    display: inline-block;
+}
+
+nav a:nth-child(1) {
+    margin-left: 12px;
+}
+
+.nav-spacer {
+    display: inline;
+    margin-left: 20px;
+}
+/* *********************************************** */
+/* NAV BAR STYLES END*/
+/* *********************************************** */
+
+
+
+
+
+
+/* *********************************************** */
+/* MAIN STYLES*/
+/* *********************************************** */
+.article {
+    vertical-align: top;
+    /* text-align: left; */
+    display: inline-block;
+    width: 40%;
+    padding-left: 10px;
+}
+
+/* slideshow styles */
+#image {
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 500px;
+    height: 300px;
+}
+.align-right {
+    text-align: right;
+}
+
+/* end slideshow styles */
+main {
+    padding-bottom: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 50px;
+    line-height: 200%;
+    min-height: 500px;
+}
+
+main p {
+    font-size: large;
+    text-indent: 2rem;
+}
+
+ul {
+    list-style-image: url(../images/leafbullet.png);
+    list-style-position: inside;
+}
+/* *********************************************** */
+/* MAIN STYLES END*/
+/* *********************************************** */
+
+
+
+
+
+/* *********************************************** */
+/* FOOTER STYLES */
+/* *********************************************** */
+footer {
+    background-image: linear-gradient(45deg, rgb(200,183,146), green);
+    padding-left: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+footer.darkmode {
+    background-image: linear-gradient(45deg, black, green);
+}
+
+.socmed {
+    margin: 10px;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    vertical-align: bottom;
+    margin-left: 25px;
+}
+
+h4 {
+    /* removing default h tag margin */
+    margin-bottom: -9px;
+    margin-top: 10px;
+    margin-left: 45px;
+}
+
+/* creates three equal divs side by side */
+.thirds {
+    width: 31%;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.darkmode footer a {
+    color: white;
+}
+
+footer .thirds h4 {
+    text-align: left;
+}
+
+@media only screen and (max-width: 500px) {
+    .media_query {
+        display: none;
+    }
+}
+/* *********************************************** */
+/* FOOTER STYLES END */
+/* *********************************************** */
+
+
+
+
+
+
+/* *********************************************** */
+/* FORM STYLES */
+/* *********************************************** */
+form {
+    display: block;
+}
+
+label {
+    vertical-align: top;
+}
+
+.error-message {
+    color: red;
+}
+
+/* makes text inputs wider */
+.wide_input {
+    width: 60%;
+}
+
+#validationSuccess {
+    color: rgb(1, 158, 1);
+}
+
+button, input[type="button"], input[type="submit"] {
+    border-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: darkgreen;
+    color: white;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+}
+
+.contact_main {
+    margin-right: 30px ;
+    margin-left: 80px ;
+}
+
+.align-left {
+    text-align: left;
+
+}
+/* *********************************************** */
+/* FORM STYLES END*/
+/* *********************************************** */
+
+
+
+
+
+
+/* *********************************************** */
+/* FAQ STYLES */
+/* *********************************************** */
+/* .faq {
+    padding-left: 20%;
+    padding-right: 20%;
+} */
+div {
+    display: none;
+}
+
+div.open {
+    display: block;
+}
+
+/* question color in light mode*/
+h2 a{
+    text-decoration: none;
+    color: rgb(51, 41, 10);
+}
+
+.no_bullet {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+.darkmode h2 a {
+    color: rgb(165, 144, 52);
+    text-align: center;
+    box-shadow: 2px, 2px, white;
+}
+
+.faq h1, .faq h2, .faq h3, .faq h4 {
+    color:rgb(165, 144, 52);
+    text-align: center;
+}
+
+
+/* .darkmode .faq h1, .darkmode .faq h2, .darkmode .faq h3, .darkmode .faq h4 {
+    color: rgb(165, 144, 52);
+    text-align: center;
+} */
+
+/* h4 {
+    text-align: left;
+} */
+/* ************************************************* */
+/* FAQ STYLES END */
+/* ************************************************* */
+
+
+
+
+
+/* ************************************************* */
+/* PROFILE STYLES */
+/* ************************************************* */
+#tasks {
+    margin-top: 0;
+    float: right;
+}
+
+.task_list {
+    width: 47%;
+    display: inline-block;
+    vertical-align: top;
+}
+/* ************************************************* */
+/* PROFILE STYLES END */
+/* ************************************************* */
+
+
+
+
+
+/* ************************************************* */
+/* SERVICES STYLES */
+/* ************************************************* */
+.services_img {
+    margin-left: 75px;
+    height: 65%;
+    width: 65%;
+}
+
+.services_img:nth-child(1) {
+    margin-top: 30px;
+    height: 82%;
+    width: 82%;
+}
+
+/* ************************************************* */
+/* SERVICES STYLES END */
+/* ************************************************* */
+
+
+
+/* ************************************************* */
+/* Admin STYLES  */
+/* ************************************************* */
+table, tr, td, th {
+    border-color: white;
+    border-width: 2px;
+    border-collapse: collapse;
+}
+
+.fifths {
+    width: 15%;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    height: 100vh;
+}
+
+#visitor_table {
+    margin-left: -20%;
+}
+
+/*.three-fifth {
+    width: 31%;
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+}*/
+/* ************************************************* */
+/* ADMIN STYLES END */
+/* ************************************************* */
